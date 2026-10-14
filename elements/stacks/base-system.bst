@@ -56,16 +56,11 @@ depends:
   - freedesktop-sdk.bst:components/steam-devices.bst
   - freedesktop-sdk.bst:components/git-lfs.bst
   - freedesktop-sdk.bst:components/git.bst
-  - freedesktop-sdk.bst:components/unzip.bst
   - freedesktop-sdk.bst:components/rsync.bst
   - freedesktop-sdk.bst:components/jq.bst
 
-  - gnome-build-meta.bst:gnomeos-deps/android-udev-rules.bst
-  - gnome-build-meta.bst:gnomeos-deps/distrobox.bst
   - gnome-build-meta.bst:gnomeos-deps/hidraw-udev.bst
   - gnome-build-meta.bst:gnomeos-deps/journald-config.bst
-  - gnome-build-meta.bst:gnomeos-deps/just.bst
   - gnome-build-meta.bst:gnomeos-deps/ld-config.bst
   - gnome-build-meta.bst:gnomeos-deps/udev-hide-usr.bst
-  - gnome-build-meta.bst:gnomeos-deps/zram-generator.bst
-  - gnome-build-meta.bst:gnomeos/reload-sysext.bst
+  - os-release.bst

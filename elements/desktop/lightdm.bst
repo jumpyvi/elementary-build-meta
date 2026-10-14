@@ -14,7 +14,7 @@ build-depends:
 - freedesktop-sdk.bst:components/gobject-introspection.bst
 - freedesktop-sdk.bst:components/gtk-doc.bst
 - freedesktop-sdk.bst:components/itstool.bst
-- gnome-build-meta.bst:core-deps/intltool.bst
+- freedesktop-sdk-extra.bst:components/intltool.bst
 - gnome-build-meta.bst:sdk/yelp-tools.bst
 
 depends:
@@ -28,7 +28,7 @@ depends:
 - deps/libxklavier.bst
 - freedesktop-sdk.bst:components/audit.bst
 - freedesktop-sdk.bst:components/polkit.bst
-- gnome-build-meta.bst:core-deps/accountsservice.bst
+- freedesktop-sdk-extra.bst:components/accountsservice.bst
 
 variables:
   conf-local: |-

@@ -8,34 +8,8 @@ bst *ARGS:
     #!/usr/bin/env bash
     set -xeuo pipefail
 
-    mkdir -p "$HOME/.cache/buildstream"
-    mkdir -p "$HOME/.config/elementarybst"
-    touch "$HOME/.config/buildstream.conf"
-    podman run --rm \
-        --privileged \
-        --device /dev/fuse \
-        --network=host \
-        -v "{{base_dir}}":/pwd \
-        -v "$HOME/.config/buildstream.conf:/root/.config/buildstream.conf" \
-        -v "$HOME/.cache/buildstream:/root/.cache/buildstream:rw" \
-        -w /pwd \
-        "{{bst_image}}" bash -c 'bst --colors {{ARGS}}'
+    sudo $(which mkosi) box bst {{ARGS}}'
 
-bst-interactive *ARGS:
-    #!/usr/bin/env bash
-    set -xeuo pipefail
-
-    mkdir -p "$HOME/.cache/buildstream"
-    touch "$HOME/.config/buildstream.conf"
-    podman run --rm -it \
-        --privileged \
-        --device /dev/fuse \
-        --network=host \
-        -v "{{base_dir}}":/pwd \
-        -v "$HOME/.config/buildstream.conf:/root/.config/buildstream.conf" \
-        -v "$HOME/.cache/buildstream:/root/.cache/buildstream:rw" \
-        -w /pwd \
-        "{{bst_image}}" bash -c 'bst --colors {{ARGS}}'
 
 [ arg ("branch", long="branch", short="b") ]
 generate-image-version branch="25.08":

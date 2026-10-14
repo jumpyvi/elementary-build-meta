@@ -15,7 +15,7 @@ build-depends:
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - deps/packagekit-glib2.bst
-- gnome-build-meta.bst:core-deps/libportal.bst
+- gnome-build-meta.bst:sdk/libportal.bst
 - freedesktop-sdk.bst:components/gsettings-desktop-schemas.bst
 - gnome-build-meta.bst:sdk/gtk.bst
 - gnome-build-meta.bst:sdk/libadwaita.bst

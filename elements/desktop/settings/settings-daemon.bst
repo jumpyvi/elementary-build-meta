@@ -21,6 +21,6 @@ depends:
 - gnome-build-meta.bst:core-deps/fwupd.bst
 - freedesktop-sdk.bst:components/gdk-pixbuf.bst
 - freedesktop-sdk.bst:components/geoclue-libs.bst
-- gnome-build-meta.bst:core-deps/accountsservice.bst
+- freedesktop-sdk-extra.bst:components/accountsservice.bst
 - freedesktop-sdk.bst:components/dbus.bst
 - deps/granite-7.bst

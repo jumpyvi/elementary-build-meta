@@ -21,5 +21,5 @@ depends:
 - gnome-build-meta.bst:core-deps/libcanberra.bst
 - freedesktop-sdk.bst:components/desktop-file-utils.bst
 - freedesktop-sdk.bst:components/libxml2.bst
-- gnome-build-meta.bst:sdk/libhandy.bst
+- gnome-build-meta.bst:core-deps/libhandy.bst
 - deps/granite-7.bst

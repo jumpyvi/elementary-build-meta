@@ -18,5 +18,5 @@ depends:
 - gnome-build-meta.bst:sdk/libadwaita.bst
 - gnome-build-meta.bst:sdk/gtk.bst
 - gnome-build-meta.bst:sdk/libgee.bst
-- gnome-build-meta.bst:sdk-deps/sassc.bst
+- freedesktop-sdk-extra.bst:components/sassc.bst
 - deps/granite-7.bst

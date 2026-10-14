@@ -31,4 +31,5 @@ files/boot-keys/modules/linux-module-cert.crt
 mkosi.output/
 mkosi.tools/
 mkosi.cache/
+.mkosi-private/
 .*/

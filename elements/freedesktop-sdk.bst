@@ -42,7 +42,3 @@ config:
     components/libsecret.bst: gnome-build-meta.bst:sdk/libsecret.bst
 
     components/zenity.bst: gnome-build-meta.bst:void/zenity.bst
-
-    components/systemd.bst: gnome-build-meta.bst:core-deps/systemd.bst
-    components/systemd-ukify.bst: gnome-build-meta.bst:core-deps/systemd-ukify.bst
-    components/systemd-libs.bst: gnome-build-meta.bst:core-deps/systemd-libs.bst

@@ -12,7 +12,7 @@ build-depends:
 - freedesktop-sdk.bst:components/gettext.bst
 - freedesktop-sdk.bst:components/vala.bst
 - freedesktop-sdk.bst:components/gobject-introspection.bst
-- gnome-build-meta.bst:sdk-deps/sassc.bst
+- freedesktop-sdk-extra.bst:components/sassc.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

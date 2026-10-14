@@ -23,10 +23,10 @@ depends:
 - freedesktop-sdk.bst:components/dbus.bst
 - freedesktop-sdk.bst:components/sqlite.bst
 - gnome-build-meta.bst:sdk/pango.bst
-- gnome-build-meta.bst:core-deps/libportal.bst
+- gnome-build-meta.bst:sdk/libportal.bst
 - gnome-build-meta.bst:core-deps/libcloudproviders.bst
 - freedesktop-sdk.bst:components/poppler.bst
 - freedesktop-sdk.bst:components/desktop-file-utils.bst
-- gnome-build-meta.bst:sdk/libhandy.bst
+- gnome-build-meta.bst:core-deps/libhandy.bst
 - deps/granite-7.bst
 - deps/granite.bst
