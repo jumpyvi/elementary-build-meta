@@ -28,3 +28,7 @@ files/boot-keys/extra-kek/
 files/boot-keys/linux-module-cert.crt
 files/boot-keys/linux-module-cert.key
 files/boot-keys/modules/linux-module-cert.crt
+mkosi.output/
+mkosi.tools/
+mkosi.cache/
+.*/

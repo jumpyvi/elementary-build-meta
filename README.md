@@ -1,6 +1,6 @@
 # ElementaryOS 26.04 (fSDK)
 
-ElementaryOS, but based on [Freedesktop SDK](https://gitlab.com/freedesktop-sdk/freedesktop-sdk) instead of Ubuntu and PackageSlop.
+ElementaryOS, but based on [Freedesktop SDK](https://gitlab.com/freedesktop-sdk/freedesktop-sdk) instead of Ubuntu.
 
 
 ## What?

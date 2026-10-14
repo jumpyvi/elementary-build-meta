@@ -3,8 +3,8 @@ kind: junction
 sources:
 - kind: git_repo
   url: gitlab:freedesktop-sdk/freedesktop-sdk.git
-  track: freedesktop-sdk-25.08*
-  ref: freedesktop-sdk-25.08.16-0-gc4f8b7234c787e8282fb9d4f208b08f9f677eba9
+  track: freedesktop-sdk-26.08*
+  ref: freedesktop-sdk-26.08.2-0-g32c5fea70e827885fc805d38a9dc5716c39ed173
 - kind: patch_queue
   path: patches/freedesktop-sdk
 
@@ -16,10 +16,6 @@ config:
         bootstrap_build_arch: 'x86_64'
     - arch == 'aarch64':
         bootstrap_build_arch: 'aarch64'
-    - arch == "ppc64le":
-        bootstrap_build_arch: "ppc64le"
-    - arch == "riscv64":
-        bootstrap_build_arch: "x86_64"
 
   overrides:
     components/at-spi2-core.bst: gnome-build-meta.bst:sdk/at-spi2-core.bst
@@ -45,16 +41,8 @@ config:
     components/vala.bst: gnome-build-meta.bst:sdk/vala.bst
     components/libsecret.bst: gnome-build-meta.bst:sdk/libsecret.bst
 
-    # While freedesktop-sdk provides a zenity element, it's the
-    # gtk3 version which we don't want, and we also override it
-    # to a void element to avoid zenity ending up in our Runtime.
-    # However mutter depends on zenity when building the tests,
-    # so we will add it to core-deps, oci images and gnomeos but
-    # not the Flatpak runtime, as its easy to bundle when needed.
     components/zenity.bst: gnome-build-meta.bst:void/zenity.bst
 
-    components/linux-module-cert.bst: core/linux-module-cert.bst
-    components/systemd-base.bst: gnome-build-meta.bst:core-deps/systemd-base.bst
     components/systemd.bst: gnome-build-meta.bst:core-deps/systemd.bst
     components/systemd-ukify.bst: gnome-build-meta.bst:core-deps/systemd-ukify.bst
     components/systemd-libs.bst: gnome-build-meta.bst:core-deps/systemd-libs.bst
