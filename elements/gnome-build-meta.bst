@@ -13,3 +13,4 @@ config:
     # This along with the patches is required and has to match what gnome-build-meta is using
     freedesktop-sdk.bst: freedesktop-sdk.bst
     freedesktop-sdk-extra.bst: freedesktop-sdk-extra.bst
+    core-deps/systemd.bst: freedesktop-sdk.bst:components/systemd.bst

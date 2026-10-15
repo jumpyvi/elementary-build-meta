@@ -19,4 +19,5 @@ depends:
 - gnome-build-meta.bst:sdk/gtk.bst
 - gnome-build-meta.bst:sdk/libadwaita.bst
 - deps/granite-7.bst
+- deps/packagekit-glib2.bst
 - desktop/panel/wingpanel.bst
