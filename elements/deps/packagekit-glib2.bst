@@ -20,8 +20,6 @@ depends:
 - freedesktop-sdk.bst:components/polkit.bst
 - freedesktop-sdk.bst:components/dbus.bst
 - freedesktop-sdk.bst:components/jansson.bst
-- gnome-build-meta.bst:core-deps/systemd-libs.bst
-- gnome-build-meta.bst:core-deps/systemd.bst
 
 variables:
   meson-local: |-
@@ -33,4 +31,4 @@ variables:
     -Dgtk_doc=false \
     -Dman_pages=false \
     -Doffline_update=false \
-    -Dsystemd=true
+    -Dsystemd=false

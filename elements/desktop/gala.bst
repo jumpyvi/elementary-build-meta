@@ -1,10 +1,11 @@
 kind: meson
 
+# //TODO Switch to upstream when merged (elements/desktop/greeter.bst)
 sources:
 - kind: git_repo
-  url: github:elementary/gala.git
-  track: main
-  ref: 8.6.1-6-g93dc7152a1c59307e8e25be66d994bdeaa86afc6
+  url: github:garaevdi/gala.git
+  track: mutter-51
+  ref: 8.4.0-250-g182009103bcedd373cd9eb852bae980fcbc17f5c
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst

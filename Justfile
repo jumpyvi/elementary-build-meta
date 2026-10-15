@@ -8,7 +8,7 @@ bst *ARGS:
     #!/usr/bin/env bash
     set -xeuo pipefail
 
-    sudo $(which mkosi) box bst {{ARGS}}'
+    sudo $(which mkosi) box bst {{ARGS}}
 
 
 [ arg ("branch", long="branch", short="b") ]

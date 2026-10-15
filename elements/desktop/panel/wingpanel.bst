@@ -2,9 +2,9 @@ kind: meson
 
 sources:
 - kind: git_repo
-  url: github:elementary/wingpanel.git
-  track: main
-  ref: 8.0.4-40-g548769ab40b4e7229656eb50780dcb9bd576a6d4
+  url: github:garaevdi/wingpanel.git
+  track: mutter-51
+  ref: 0638a39c44e6a88cabab52471d43a15726f02e74
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst

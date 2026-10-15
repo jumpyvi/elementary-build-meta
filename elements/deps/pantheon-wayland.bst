@@ -1,3 +1,4 @@
+# Dummy package only
 kind: meson
 
 sources:

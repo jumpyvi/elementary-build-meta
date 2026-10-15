@@ -20,7 +20,6 @@ config:
   overrides:
     components/at-spi2-core.bst: gnome-build-meta.bst:sdk/at-spi2-core.bst
     components/cairo.bst: gnome-build-meta.bst:sdk/cairo.bst
-    components/fcitx5-gtk.bst: gnome-build-meta.bst:sdk/fcitx5-gtk.bst
     components/gcab.bst: gnome-build-meta.bst:sdk/gcab.bst
     components/gdk-pixbuf.bst: gnome-build-meta.bst:sdk/gdk-pixbuf.bst
     components/glib-networking.bst: gnome-build-meta.bst:sdk/glib-networking.bst
@@ -40,5 +39,6 @@ config:
     components/pygobject.bst: gnome-build-meta.bst:sdk/pygobject.bst
     components/vala.bst: gnome-build-meta.bst:sdk/vala.bst
     components/libsecret.bst: gnome-build-meta.bst:sdk/libsecret.bst
+    components/krb5.bst: gnome-build-meta.bst:sdk/krb5.bst
 
     components/zenity.bst: gnome-build-meta.bst:void/zenity.bst

@@ -4,7 +4,7 @@ sources:
 - kind: git_repo
   url: github:elementary/greeter.git
   track: main
-  ref: 8.1.2-43-g64ad36aeb47f2ae6c3a1d8ec036492159ee2b129
+  ref: 8.1.2-51-g2eb38368c78b7d35877c3493f627c9666db68cea
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst
