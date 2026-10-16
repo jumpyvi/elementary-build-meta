@@ -2,6 +2,7 @@ kind: stack
 
 # Basic functional system + cli utilities
 depends:
+  - freedesktop-sdk.bst:vm/prepare-image.bst
   - freedesktop-sdk.bst:components/linux.bst
   - freedesktop-sdk.bst:public-stacks/runtime-gnu.bst
   - freedesktop-sdk.bst:components/util-linux-full.bst
