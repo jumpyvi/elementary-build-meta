@@ -40,5 +40,5 @@ config:
     components/vala.bst: gnome-build-meta.bst:sdk/vala.bst
     components/libsecret.bst: gnome-build-meta.bst:sdk/libsecret.bst
     components/krb5.bst: gnome-build-meta.bst:sdk/krb5.bst
-
+    components/appstream-minimal.bst: deps/appstream-minimal.bst
     components/zenity.bst: gnome-build-meta.bst:void/zenity.bst

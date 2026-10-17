@@ -12,6 +12,7 @@ build-depends:
 - freedesktop-sdk.bst:components/gettext.bst
 - freedesktop-sdk.bst:components/vala.bst
 - freedesktop-sdk.bst:components/gobject-introspection.bst
+- deps/appstream-minimal.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
@@ -19,7 +20,6 @@ depends:
 - gnome-build-meta.bst:core-deps/fwupd.bst
 - freedesktop-sdk.bst:components/udisks.bst
 - freedesktop-sdk.bst:components/polkit-gobject.bst
-- freedesktop-sdk.bst:components/appstream-minimal.bst
 - gnome-build-meta.bst:core-deps/libgtop.bst
 - gnome-build-meta.bst:sdk/libadwaita.bst
 - gnome-build-meta.bst:sdk/libsoup.bst
