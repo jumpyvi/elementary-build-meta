@@ -14,3 +14,4 @@ config:
     freedesktop-sdk.bst: freedesktop-sdk.bst
     freedesktop-sdk-extra.bst: freedesktop-sdk-extra.bst
     core-deps/systemd.bst: freedesktop-sdk.bst:components/systemd.bst
+    core-deps/udisks2.bst: freedesktop-sdk.bst:components/udisks.bst

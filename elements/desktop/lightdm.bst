@@ -52,3 +52,12 @@ config:
     - |
       install -Dm644 lightdm-dirs.conf \
         "%{install-root}%{prefix}/lib/tmpfiles.d/lightdm-dirs.conf"
+    - |
+      install -Dm644 lightdm.service \
+        "%{install-root}%{prefix}/lib/systemd/system/lightdm.service"
+    - |
+      install -d "%{install-root}%{prefix}/lib/systemd/system/graphical.target.wants"
+      ln -sf lightdm.service \
+        "%{install-root}%{prefix}/lib/systemd/system/graphical.target.wants/lightdm.service"
+      ln -sf lightdm.service \
+        "%{install-root}%{prefix}/lib/systemd/system/display-manager.service"

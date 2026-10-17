@@ -29,7 +29,7 @@ depends:
   - desktop/apps/terminal.bst
 
   # Look
+  - desktop/wallpapers.bst
   - desktop/icons.bst
   - desktop/stylesheet.bst
-  - desktop/wallpapers.bst
   
