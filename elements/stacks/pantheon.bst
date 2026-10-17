@@ -23,6 +23,7 @@ depends:
   - desktop/settings/switchboard.bst
   - desktop/settings/settings-daemon.bst
   - desktop/settings/settings-system.bst
+  - desktop/settings/session-settings.bst
 
   # Apps
   - desktop/apps/files.bst

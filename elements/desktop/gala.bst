@@ -6,7 +6,7 @@ sources:
   url: github:garaevdi/gala.git
   track: mutter-51
   ref: 8.4.0-250-g182009103bcedd373cd9eb852bae980fcbc17f5c
-
+  
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst
 - freedesktop-sdk.bst:components/pkg-config.bst

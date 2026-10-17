@@ -14,7 +14,7 @@ build-depends:
 - freedesktop-sdk.bst:components/gobject-introspection.bst
 
 depends:
-- gnome-build-meta.bst:core-deps/systemd.bst
+- freedesktop-sdk.bst:components/systemd.bst
 - deps/libgexiv14.bst
 - deps/packagekit-glib2.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
