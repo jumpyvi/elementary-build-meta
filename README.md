@@ -34,13 +34,17 @@ or `switchboard`
 - [x] Granite 7
 - [ ] Granite 9
 - [x] Gala
+- [x] Icons
+- [x] Stylesheet
+- [x] Wallpapers
+- [x] Notifications
 - [x] Wingpanel
   - [x] apps-menu
-  - [ ] panel-bluethooth
+  - [ ] panel-bluetooth
   - [ ] panel-datetime
   - [ ] panel-network
   - [ ] panel-nightlight
-  - [ ] panel-notifications
+  - [x] panel-notifications
   - [x] panel-power
   - [x] panel-sound
   - [x] quick-settings
@@ -51,12 +55,17 @@ or `switchboard`
   - [x] Portals
 - [x] EOS Greeter
 - [X] LightDM
-- [ ] Kernel
+- [x] Kernel
+- [ ] PolkitAgent
+- [ ] Onboarding
+- [ ] Shortcut Overlay
 - [ ] Apps
   - [x] Terminal
   - [x] Files
   - [ ] Browser
   - [ ] Code
+  - [ ] Monitor
+  - [ ] Tasks
 
 (And probably much more)
 

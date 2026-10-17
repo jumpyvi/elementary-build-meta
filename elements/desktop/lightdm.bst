@@ -5,6 +5,8 @@ sources:
   url: github:ubuntu/lightdm.git
   track: main
   ref: 1.33.1-1-g29b06b457b0380a24e3bad630407d90d2ac2fca6
+- kind: local
+  path: files/lightdm/
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
@@ -22,6 +24,7 @@ depends:
 - gnome-build-meta.bst:sdk/glib.bst
 - freedesktop-sdk.bst:components/libgcrypt.bst
 - freedesktop-sdk.bst:components/linux-pam.bst
+- freedesktop-sdk.bst:components/systemd.bst
 - freedesktop-sdk.bst:components/xorg-lib-x11.bst
 - freedesktop-sdk.bst:components/xorg-lib-xcb.bst
 - freedesktop-sdk.bst:components/xorg-lib-xdmcp.bst
@@ -36,5 +39,16 @@ variables:
     --localstatedir=/var \
     --disable-static \
     --disable-tests \
+    --with-user-session=systemd \
     --with-greeter-user=lightdm \
-    --with-greeter-session=lightdm-gtk-greeter
+    --with-greeter-session=io.elementary.greeter
+
+config:
+  install-commands:
+    (>):
+    - |
+      install -Dm644 lightdm-users.conf \
+        "%{install-root}%{prefix}/lib/sysusers.d/lightdm-users.conf"
+    - |
+      install -Dm644 lightdm-dirs.conf \
+        "%{install-root}%{prefix}/lib/tmpfiles.d/lightdm-dirs.conf"
