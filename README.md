@@ -24,9 +24,9 @@ or `switchboard`
 
 ### Build elementaryOS (meta)
 
-`just bst build stacks/elementaryos.bst`
+> Will take arround 3 hours, and 90gb of download
 
-`just bst artifact checkout stacks/elementaryos.bst --directory ./rootfs`
+`just build`
 
 ## Progress
 
@@ -52,6 +52,7 @@ or `switchboard`
 - [x] Dock
 - [ ] Settings (switchboard)
   - [x] Settings-daemon
+  - [x] System-settings
   - [x] Portals
 - [x] EOS Greeter
 - [X] LightDM
@@ -67,7 +68,7 @@ or `switchboard`
   - [ ] Monitor
   - [ ] Tasks
 
-(And probably much more)
+(And probably a bunch more)
 
 
 # Thank you
