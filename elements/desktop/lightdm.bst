@@ -39,7 +39,7 @@ variables:
     --localstatedir=/var \
     --disable-static \
     --disable-tests \
-    --with-user-session=systemd \
+    --with-user-session=pantheon-wayland  \
     --with-greeter-user=lightdm \
     --with-greeter-session=io.elementary.greeter
 
