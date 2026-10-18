@@ -25,6 +25,7 @@ depends:
   - desktop/settings/settings-daemon.bst
   - desktop/settings/settings-system.bst
   - desktop/settings/session-settings.bst
+  - desktop/settings/default-settings.bst
 
   # Apps
   - desktop/apps/files.bst
