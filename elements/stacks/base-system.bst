@@ -1,3 +1,4 @@
+# stacks/base-system.bst
 kind: stack
 
 # Basic functional system + cli utilities

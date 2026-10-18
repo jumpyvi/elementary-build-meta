@@ -1,3 +1,4 @@
+# stacks/pantheon.bst
 kind: stack
 
 depends:
@@ -9,6 +10,7 @@ depends:
   - desktop/greeter.bst
   - desktop/portals.bst
   - desktop/notifications-server.bst
+  - desktop/initial-setup.bst
 
   # Panel
   - desktop/panel/wingpanel.bst
@@ -17,7 +19,6 @@ depends:
   - desktop/panel/panel-sound.bst
   - desktop/panel/panel-notifications.bst
   - desktop/panel/quick-settings.bst
-  - desktop/panel/panel-notifications.bst
 
   # Settings
   - desktop/settings/switchboard.bst

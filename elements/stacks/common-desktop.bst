@@ -1,3 +1,4 @@
+# stacks/common-desktop.bst
 kind: stack
 
 depends:
