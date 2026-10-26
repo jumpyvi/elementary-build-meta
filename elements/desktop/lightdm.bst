@@ -57,7 +57,7 @@ config:
         "%{install-root}%{prefix}/lib/systemd/system/lightdm.service"
     - |
       install -Dm755 lightdm-session \
-        "%{install-root}%{prefix}/sbin/lightdm-session"
+        "%{install-root}%{prefix}/bin/lightdm-session"
     - |-
       install -d "%{install-root}%{prefix}/lib/systemd/system/graphical.target.wants"
       ln -sf lightdm.service \
