@@ -14,6 +14,9 @@ build-depends:
 - freedesktop-sdk.bst:components/vala.bst
 - freedesktop-sdk.bst:components/gobject-introspection.bst
 
+runtime-depends:
+- gnome-build-meta.bst:core/gnome-session.bst
+
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/gsettings-desktop-schemas.bst

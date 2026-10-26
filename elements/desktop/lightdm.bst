@@ -3,8 +3,8 @@ kind: autotools
 sources:
 - kind: git_repo
   url: github:ubuntu/lightdm.git
-  track: main
-  ref: 1.33.1-1-g29b06b457b0380a24e3bad630407d90d2ac2fca6
+  track: 1.32.0
+  ref: 1.32.0-0-g4b10d07b7bf87668a245b438b5ffc82e3956bd1c
 - kind: local
   path: files/lightdm/
 
@@ -55,7 +55,7 @@ config:
     - |
       install -Dm644 lightdm.service \
         "%{install-root}%{prefix}/lib/systemd/system/lightdm.service"
-    - |
+    - |-
       install -d "%{install-root}%{prefix}/lib/systemd/system/graphical.target.wants"
       ln -sf lightdm.service \
         "%{install-root}%{prefix}/lib/systemd/system/graphical.target.wants/lightdm.service"
