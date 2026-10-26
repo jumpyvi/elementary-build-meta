@@ -5,6 +5,8 @@ sources:
   url: github:elementary/greeter.git
   track: main
   ref: 8.1.2-51-g2eb38368c78b7d35877c3493f627c9666db68cea
+- kind: patch_queue
+  path: patches/greeter
   
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst
