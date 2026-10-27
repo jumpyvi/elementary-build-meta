@@ -47,18 +47,27 @@ config:
   install-commands:
     (>):
     - |
+      # Create lightdm users
       install -Dm644 lightdm-users.conf \
         "%{install-root}%{prefix}/lib/sysusers.d/lightdm-users.conf"
     - |
+      # Create lightdm dirs with right perms
       install -Dm644 lightdm-dirs.conf \
         "%{install-root}%{prefix}/lib/tmpfiles.d/lightdm-dirs.conf"
     - |
+      # Use LFS lightdm service, lightdm doesn't ship a proper one
       install -Dm644 lightdm.service \
         "%{install-root}%{prefix}/lib/systemd/system/lightdm.service"
     - |
+      # Fix graphical-target issues
+      install -Dm644 greeter-session.target \
+        "%{install-root}%{prefix}/lib/systemd/user/greeter-session.target"
+    - |
+      # lightdm-session binary used by gala/lightdm
       install -Dm755 lightdm-session \
         "%{install-root}%{prefix}/bin/lightdm-session"
-    - |-
+    - |
+      # Enable services
       install -d "%{install-root}%{prefix}/lib/systemd/system/graphical.target.wants"
       ln -sf lightdm.service \
         "%{install-root}%{prefix}/lib/systemd/system/graphical.target.wants/lightdm.service"

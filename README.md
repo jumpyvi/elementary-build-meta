@@ -30,9 +30,9 @@ or `switchboard`
 
 ## Progress
 
-- [x] Granite (Legacy)
+- [x] Granite 6 (Legacy)
 - [x] Granite 7
-- [ ] Granite 9
+- [x] Granite 9
 - [x] Gala
 - [x] Icons
 - [x] Stylesheet
@@ -41,8 +41,8 @@ or `switchboard`
 - [x] Wingpanel
   - [x] apps-menu
   - [ ] panel-bluetooth
-  - [ ] panel-datetime
-  - [ ] panel-network
+  - [x] panel-datetime
+  - [x] panel-network
   - [ ] panel-nightlight
   - [x] panel-notifications
   - [x] panel-power
@@ -63,10 +63,8 @@ or `switchboard`
 - [ ] Apps
   - [x] Terminal
   - [x] Files
-  - [ ] Browser
   - [ ] Code
   - [ ] Monitor
-  - [ ] Tasks
 
 (And probably a bunch more)
 

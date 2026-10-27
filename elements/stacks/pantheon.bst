@@ -17,6 +17,8 @@ depends:
   - desktop/panel/applications-menu.bst
   - desktop/panel/panel-power.bst
   - desktop/panel/panel-sound.bst
+  - desktop/panel/panel-datetime.bst
+  - desktop/panel/panel-network.bst
   - desktop/panel/panel-notifications.bst
   - desktop/panel/quick-settings.bst
 
@@ -35,4 +37,7 @@ depends:
   - desktop/wallpapers.bst
   - desktop/icons.bst
   - desktop/stylesheet.bst
+
+  # Commons
+  - deps/granite-9.bst
   

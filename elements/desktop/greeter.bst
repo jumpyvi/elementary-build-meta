@@ -30,4 +30,3 @@ depends:
 - gnome-build-meta.bst:core/mutter.bst
 - gnome-build-meta.bst:core-deps/libhandy.bst
 - deps/granite-7.bst
-- deps/granite.bst

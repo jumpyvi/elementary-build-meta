@@ -29,4 +29,3 @@ depends:
 - freedesktop-sdk.bst:components/desktop-file-utils.bst
 - gnome-build-meta.bst:core-deps/libhandy.bst
 - deps/granite-7.bst
-- deps/granite.bst
