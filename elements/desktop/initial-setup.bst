@@ -18,7 +18,7 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/desktop-file-utils.bst
 - deps/granite-7.bst
-- gnome-build-meta.bst:sdk/gtk.bst
+- deps/gtk-4.bst
 - freedesktop-sdk.bst:components/libxkbcommon.bst
-- gnome-build-meta.bst:sdk/libadwaita.bst
+- deps/libadwaita.bst
 - deps/pantheon-wayland.bst

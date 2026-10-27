@@ -15,9 +15,9 @@ build-depends:
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/glib.bst
-- gnome-build-meta.bst:sdk/gtk.bst
+- deps/gtk-4.bst
 - gnome-build-meta.bst:core-deps/vte.bst
-- gnome-build-meta.bst:sdk/libadwaita.bst
+- deps/libadwaita.bst
 - gnome-build-meta.bst:core-deps/libcanberra.bst
 - gnome-build-meta.bst:core-deps/libgit2-glib.bst
 - freedesktop-sdk.bst:components/dbus.bst
@@ -29,3 +29,4 @@ depends:
 - freedesktop-sdk.bst:components/desktop-file-utils.bst
 - gnome-build-meta.bst:core-deps/libhandy.bst
 - deps/granite-7.bst
+- deps/granite-6.bst

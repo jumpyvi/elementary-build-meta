@@ -11,8 +11,8 @@ build-depends:
 - freedesktop-sdk.bst:components/gettext.bst
 - freedesktop-sdk.bst:components/vala.bst
 - gnome-build-meta.bst:core-deps/libcanberra.bst
-- gnome-build-meta.bst:sdk/gtk.bst
-- gnome-build-meta.bst:sdk/libadwaita.bst
+- deps/gtk-4.bst
+- deps/libadwaita.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

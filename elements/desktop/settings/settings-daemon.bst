@@ -19,7 +19,7 @@ depends:
 - deps/packagekit-glib2.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - gnome-build-meta.bst:core/gnome-desktop.bst
-- gnome-build-meta.bst:core-deps/fwupd.bst
+- freedesktop-sdk.bst:components/vala.bst
 - freedesktop-sdk.bst:components/gdk-pixbuf.bst
 - freedesktop-sdk.bst:components/geoclue-libs.bst
 - freedesktop-sdk-extra.bst:components/accountsservice.bst

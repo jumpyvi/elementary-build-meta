@@ -16,7 +16,7 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/gsettings-desktop-schemas.bst
 - freedesktop-sdk.bst:components/glib.bst
-- gnome-build-meta.bst:sdk/gtk.bst
+- deps/gtk-4.bst
 - gnome-build-meta.bst:sdk/libnotify.bst
 - gnome-build-meta.bst:core-deps/libgtop.bst
 - deps/granite-7.bst

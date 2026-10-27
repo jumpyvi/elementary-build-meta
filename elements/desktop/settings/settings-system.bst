@@ -16,12 +16,12 @@ build-depends:
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
-- gnome-build-meta.bst:sdk/gtk.bst
-- gnome-build-meta.bst:core-deps/fwupd.bst
+- deps/gtk-4.bst
+- freedesktop-sdk.bst:components/vala.bst
 - freedesktop-sdk.bst:components/udisks.bst
 - freedesktop-sdk.bst:components/polkit-gobject.bst
 - gnome-build-meta.bst:core-deps/libgtop.bst
-- gnome-build-meta.bst:sdk/libadwaita.bst
+- deps/libadwaita.bst
 - gnome-build-meta.bst:sdk/libsoup.bst
 - desktop/settings/switchboard.bst
 - deps/packagekit-glib2.bst
