@@ -10,7 +10,7 @@ depends:
   - freedesktop-sdk.bst:vm/config/flathub.bst
   - freedesktop-sdk.bst:vm/mesa-default.bst
   - gnome-build-meta.bst:gnomeos-deps/alsa-ucm-conf.bst
-  - gnome-build-meta.bst:core-deps/xdg-desktop-portal-gtk.bst
+  - deps/xdg-desktop-portal-gtk.bst
   - gnome-build-meta.bst:core/gvfs-daemon.bst
   - gnome-build-meta.bst:sdk/gvfs-client.bst
   - gnome-build-meta.bst:sdk/pinentry.bst

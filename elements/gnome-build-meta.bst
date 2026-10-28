@@ -48,3 +48,4 @@ config:
     sdk/gtk.bst: deps/gtk-4.bst
     sdk/libadwaita.bst: deps/libadwaita.bst
     core-deps/gnome-online-accounts.bst: deps/gnome-online-accounts.bst
+    core-deps/xdg-desktop-portal.bst: deps/xdg-desktop-portal.bst

@@ -9,6 +9,8 @@ depends:
   - desktop/lightdm.bst
   - desktop/greeter.bst
   - desktop/portals.bst
+  - freedesktop-sdk.bst:components/xdg-desktop-portal.bst
+  - deps/xdg-desktop-portal-gtk.bst
   - desktop/notifications-server.bst
   - desktop/initial-setup.bst
 

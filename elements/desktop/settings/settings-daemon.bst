@@ -14,6 +14,7 @@ build-depends:
 - freedesktop-sdk.bst:components/gobject-introspection.bst
 
 depends:
+- freedesktop-sdk.bst:components/gsettings-desktop-schemas.bst
 - freedesktop-sdk.bst:components/fwupd.bst
 - freedesktop-sdk.bst:components/systemd.bst
 - deps/libgexiv14.bst
