@@ -12,6 +12,7 @@ build-depends:
 - freedesktop-sdk-extra.bst:components/accountsservice.bst
 
 depends:
+- freedesktop-sdk.bst:components/libcupsfilters.bst
 - freedesktop-sdk.bst:components/systemd.bst
 - freedesktop-sdk.bst:components/dbus.bst
 - freedesktop-sdk.bst:components/polkit-gobject.bst

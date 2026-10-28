@@ -12,11 +12,14 @@ build-depends:
 - freedesktop-sdk.bst:components/gettext.bst
 - freedesktop-sdk.bst:components/vala.bst
 
+runtime-depends:
+- freedesktop-sdk.bst:components/librsvg.bst
+
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/gsettings-desktop-schemas.bst
 - freedesktop-sdk.bst:components/glib.bst
-- gnome-build-meta.bst:sdk/gtk.bst
+- deps/gtk-4.bst
 - gnome-build-meta.bst:sdk/json-glib.bst
 - gnome-build-meta.bst:sdk/libnotify.bst
 - deps/granite-7.bst

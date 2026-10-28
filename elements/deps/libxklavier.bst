@@ -12,7 +12,7 @@ build-depends:
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
-- gnome-build-meta.bst:sdk/glib.bst
+- freedesktop-sdk.bst:components/glib.bst
 - freedesktop-sdk.bst:components/libxml2.bst
 - freedesktop-sdk.bst:components/xorg-lib-x11.bst
 - freedesktop-sdk.bst:components/xorg-lib-xi.bst

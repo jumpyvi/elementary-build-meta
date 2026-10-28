@@ -6,8 +6,13 @@ sources:
   track: main
   ref: 9.0.0-43-gf525fd784cdc409d508593fd36a2e45f1a56240d
 
+runtime-depends:
+ - freedesktop-sdk.bst:components/gdk-pixbuf.bst
+
+depends:
+  - freedesktop-sdk.bst:components/librsvg.bst
+
 build-depends:
-- freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst
-- freedesktop-sdk.bst:components/pkg-config.bst
-- freedesktop-sdk.bst:components/librsvg.bst
-- deps/xcursorgen.bst
+  - freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst
+  - freedesktop-sdk.bst:components/pkg-config.bst
+  - deps/xcursorgen.bst

@@ -15,10 +15,10 @@ build-depends:
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/glib.bst
-- gnome-build-meta.bst:sdk/gtk.bst
+- deps/gtk-4.bst
 - gnome-build-meta.bst:core-deps/vte.bst
-- gnome-build-meta.bst:core-deps/systemd.bst
+- freedesktop-sdk.bst:components/systemd.bst
 - freedesktop-sdk-extra.bst:components/accountsservice.bst
-- gnome-build-meta.bst:sdk/libadwaita.bst
+- deps/libadwaita.bst
 - deps/pantheon-wayland.bst
 - deps/granite-7.bst

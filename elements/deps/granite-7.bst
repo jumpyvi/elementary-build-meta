@@ -13,10 +13,10 @@ build-depends:
 - freedesktop-sdk.bst:components/vala.bst
 - freedesktop-sdk.bst:components/gobject-introspection.bst
 - freedesktop-sdk-extra.bst:components/sassc.bst
-- gnome-build-meta.bst:core-deps/libshumate.bst
+- deps/libshumate.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/glib.bst
-- gnome-build-meta.bst:sdk/gtk.bst
+- deps/gtk-4.bst
 - gnome-build-meta.bst:sdk/libgee.bst

@@ -17,4 +17,4 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/glib.bst
 - freedesktop-sdk.bst:components/wayland.bst
-- gnome-build-meta.bst:sdk/gtk.bst
+- deps/gtk-4.bst

@@ -16,8 +16,8 @@ depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/gsettings-desktop-schemas.bst
 - freedesktop-sdk.bst:components/glib.bst
-- gnome-build-meta.bst:sdk/gtk.bst
-- gnome-build-meta.bst:sdk/libadwaita.bst
+- deps/gtk-4.bst
+- deps/libadwaita.bst
 - freedesktop-sdk.bst:components/gdk-pixbuf.bst
 - desktop/panel/wingpanel.bst
 - deps/granite-7.bst

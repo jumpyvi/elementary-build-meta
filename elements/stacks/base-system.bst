@@ -22,7 +22,7 @@ depends:
   - freedesktop-sdk.bst:components/iputils.bst
   - freedesktop-sdk.bst:components/openssh.bst
   - freedesktop-sdk.bst:components/openssh-systemd.bst
-  - gnome-build-meta.bst:core-deps/fwupd.bst
+  - freedesktop-sdk.bst:components/vala.bst
   - freedesktop-sdk.bst:vm/base-filesystem.bst
   - freedesktop-sdk.bst:vm/config/networkd.bst
   - freedesktop-sdk.bst:vm/config/resolved.bst
