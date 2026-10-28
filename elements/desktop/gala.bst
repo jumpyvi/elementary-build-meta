@@ -25,7 +25,7 @@ depends:
 - freedesktop-sdk.bst:components/glib.bst
 - freedesktop-sdk.bst:components/sqlite.bst
 - deps/gtk-4.bst
-- gnome-build-meta.bst:sdk/gtk+-3.bst
+- freedesktop-sdk.bst:components/gtk3.bst
 - freedesktop-sdk.bst:components/desktop-file-utils.bst
 - gnome-build-meta.bst:sdk/libgee.bst
 - gnome-build-meta.bst:core/gnome-desktop.bst

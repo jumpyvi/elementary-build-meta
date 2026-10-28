@@ -13,6 +13,7 @@ build-depends:
 - freedesktop-sdk.bst:components/vala.bst
 
 depends:
+- freedesktop-sdk-extra.bst:components/accountsservice.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - gnome-build-meta.bst:sdk/libportal.bst
 - freedesktop-sdk.bst:components/gsettings-desktop-schemas.bst

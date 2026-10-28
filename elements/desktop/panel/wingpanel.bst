@@ -11,6 +11,7 @@ build-depends:
 - freedesktop-sdk.bst:components/pkg-config.bst
 - freedesktop-sdk.bst:components/gettext.bst
 - freedesktop-sdk.bst:components/vala.bst
+- gnome-build-meta.bst:core/sysprof-app.bst
 - freedesktop-sdk.bst:components/gobject-introspection.bst
 
 depends:
@@ -20,6 +21,6 @@ depends:
 - deps/gtk-4.bst
 - freedesktop-sdk.bst:components/desktop-file-utils.bst
 - gnome-build-meta.bst:sdk/libgee.bst
-- gnome-build-meta.bst:core/mutter.bst
+- desktop/mutter.bst
 - deps/granite-7.bst
 - desktop/gala.bst

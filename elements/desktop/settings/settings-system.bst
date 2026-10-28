@@ -15,6 +15,7 @@ build-depends:
 - deps/appstream-minimal.bst
 
 depends:
+- freedesktop-sdk.bst:components/fwupd.bst
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - deps/gtk-4.bst
 - freedesktop-sdk.bst:components/vala.bst

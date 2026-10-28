@@ -12,6 +12,7 @@ build-depends:
 - freedesktop-sdk.bst:components/gobject-introspection.bst
 - freedesktop-sdk.bst:components/vala.bst
 - freedesktop-sdk.bst:components/docbook-xsl.bst
+- freedesktop-sdk.bst:components/krb5.bst
 - deps/libadwaita.bst
 - freedesktop-sdk.bst:components/libxslt.bst
 

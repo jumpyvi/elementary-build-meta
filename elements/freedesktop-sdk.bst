@@ -19,3 +19,4 @@ config:
 
   overrides:
     components/appstream-minimal.bst: deps/appstream-minimal.bst
+    components/appstream.bst: deps/appstream-minimal.bst
