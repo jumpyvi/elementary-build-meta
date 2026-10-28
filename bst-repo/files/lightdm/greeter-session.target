@@ -1,0 +1,9 @@
+[Unit]
+Description=LightDM greeter graphical session
+ConditionUser=lightdm
+BindsTo=graphical-session.target
+Wants=graphical-session-pre.target
+After=graphical-session-pre.target
+
+[Install]
+WantedBy=default.target

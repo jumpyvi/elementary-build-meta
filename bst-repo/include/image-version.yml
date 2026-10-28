@@ -1,0 +1,11 @@
+# Run (just generate-image-version) to set all of these variables properly.
+# To change the branch, you can set the BRANCH environment variable like so:
+# (BRANCH=testing just generate-image-version)
+#
+# set within the Justfile
+branch: 'local'
+# git rev-parse HEAD
+commit: 'unknown'
+# l for local
+# Gets updated in Justfile in CI via (git log -1 --format=%cd --date=format:%Y%m%d%H%M)
+image-version: 'l.1'
