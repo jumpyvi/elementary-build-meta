@@ -11,11 +11,11 @@ build-depends:
 - freedesktop-sdk.bst:components/pkg-config.bst
 - freedesktop-sdk.bst:components/gettext.bst
 - freedesktop-sdk.bst:components/vala.bst
-- gnome-build-meta.bst:core-deps/libnma.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
 - freedesktop-sdk.bst:components/gsettings-desktop-schemas.bst
+- gnome-build-meta.bst:core-deps/libnma.bst
 - freedesktop-sdk.bst:components/glib.bst
 - deps/gtk-4.bst
 - deps/libadwaita.bst

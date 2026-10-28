@@ -28,10 +28,15 @@ depends:
   - desktop/settings/settings-system.bst
   - desktop/settings/session-settings.bst
   - desktop/settings/default-settings.bst
+  - desktop/settings/desktop-settings.bst
+  - desktop/settings/settings-sound.bst
+  - desktop/settings/settings-network.bst
+  - desktop/settings/settings-notifications.bst
 
   # Apps
   - desktop/apps/files.bst
   - desktop/apps/terminal.bst
+  - desktop/apps/onboarding.bst
 
   # Look
   - desktop/wallpapers.bst

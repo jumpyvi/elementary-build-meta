@@ -38,6 +38,8 @@ config:
     sdk/libglycin.bst: freedesktop-sdk.bst:components/libglycin.bst
     sdk/glycin.bst: freedesktop-sdk.bst:components/glycin.bst
     sdk/glib.bst: freedesktop-sdk.bst:components/glib.bst
+    core-deps/libplist.bst:  freedesktop-sdk.bst:components/libplist.bst
+    core-deps/libimobiledevice.bst: freedesktop-sdk.bst:components/libimobiledevice.bst
     core-deps/fwupd.bst : freedesktop-sdk.bst:components/fwupd.bst
     core-deps/upower.bst: freedesktop-sdk.bst:components/upower.bst
     core-deps/colord.bst: freedesktop-sdk.bst:components/colord.bst

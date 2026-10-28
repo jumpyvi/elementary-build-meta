@@ -51,9 +51,14 @@ or `switchboard`
 - [ ] AppCenter
 - [x] Dock
 - [ ] Settings (switchboard)
-  - [x] Settings-daemon
-  - [x] System-settings
-  - [x] Portals
+  - [x] settings-daemon
+  - [x] system-settings
+  - [x] desktop
+  - [x] session
+  - [x] network
+  - [x] notifications
+  - [x] sound
+- [x] Portals
 - [x] EOS Greeter
 - [X] LightDM
 - [x] Kernel

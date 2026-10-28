@@ -7,3 +7,7 @@ set -euo pipefail
 chmod u+s /usr/bin/fusermount3
 
 chmod 4755 /usr/bin/sudo /usr/bin/su /usr/bin/passwd /usr/bin/newuidmap /usr/bin/newgidmap
+
+
+# Remove empty gnome session
+rm -f /usr/share/wayland-sessions/gnome.desktop
