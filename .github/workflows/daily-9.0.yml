@@ -10,6 +10,8 @@ on:
 
 jobs:
   call-reusable-build:
+    permissions:
+        contents: write
     uses: ./.github/workflows/build-release.yml
     with:
       stream: daily

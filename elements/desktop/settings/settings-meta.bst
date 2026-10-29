@@ -1,14 +1,14 @@
 kind: stack
 
 depends:
-  - desktop/settings/daemon.bst
-  - desktop/settings/defaults.bst
-  - desktop/settings/desktop.bst
-  - desktop/settings/display.bst
-  - desktop/settings/network.bst
-  - desktop/settings/notifications.bst
-  - desktop/settings/session.bst
-  - desktop/settings/sound.bst
   - desktop/settings/switchboard.bst
-  - desktop/settings/system.bst
+  - desktop/settings/settings-daemon.bst
+  - desktop/settings/settings-defaults.bst
+  - desktop/settings/settings-desktop.bst
+  - desktop/settings/settings-display.bst
+  - desktop/settings/settings-network.bst
+  - desktop/settings/settings-notifications.bst
+  - desktop/settings/settings-session.bst
+  - desktop/settings/settings-sound.bst
+  - desktop/settings/settings-system.bst
   
