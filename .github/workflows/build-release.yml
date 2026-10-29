@@ -67,7 +67,7 @@ jobs:
 
       - name: Build with mkosi
         # Will either run do-daily or do-stable
-        run: just do-${{ inputs.stream }}
+        run: just do-release
 
       - name: Generate SHA256SUMS (all partitions)
         run: just checksum-repo

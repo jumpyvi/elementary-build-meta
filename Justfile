@@ -28,15 +28,18 @@ genkey:
         -days 730 -subj "/CN=mkosi of root/" -nodes -set_serial "0x40$(openssl rand -hex 19)"
 
 mkosi +subcommand:
+    #!/usr/bin/env bash
     mkdir -p {{env_var('HOME')}}/.cache/mkosi-workspace
-    sudo mkdir -p ~/.cache/mkosi
+    sudo mkdir -p "$(pwd)/.cache/"{mkosi,buildstream}
 
     sudo podman run --rm \
+        --runtime=crun \
         --network host \
         --dns 8.8.8.8 \
         --privileged \
         --security-opt label=disable \
-        -v ~/.cache/mkosi:/var/cache/mkosi \
+        -v $(pwd)/.cache/mkosi:/var/cache/mkosi \
+        -v $(pwd)/.cache/buildstream:/root/.cache/buildstream \
         -v /dev:/dev \
         -v "{{invocation_directory()}}:/work" \
         -w /work \

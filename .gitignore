@@ -21,3 +21,5 @@ mkosi.rootpw
 *.efi
 .bst
 .bst2
+.cache/
+**/__pycache__/

@@ -22,7 +22,7 @@
 
 ---
 
-## Building locally
+# Building OS locally
 
 You'll need the following runtime dependencies:
 * podman
@@ -34,14 +34,35 @@ Generate keys and then build with `just`
 
 ```bash
 just genkey
-just do-daily
+just do-release
 ```
+
+> Building may take 2h+ and around 90gb
+
 This will result in a bootable .iso. </br>
 Test it out in a VM, or create an [USB install drive](https://elementary.io/docs/installation#installation) (>= 8GB)
 
+# Building elements
 
-## Further Information
+For exemple, to build gala
+
+`just bst build desktop/gala.bst`
+
+or switchboard
+
+`just bst build desktop/settings/switchboard.bst`
+
+
+# Further Information
 
 To get started with elementary OS, begin by [learning the basics](https://elementary.io/docs/learning-the-basics#learning-the-basics).
 
 For contributors, administrators and OEMs, check out the [wiki](https://github.com/elementary/os/wiki) for in-depth information.
+
+
+# Special thanks
+
+- [Zirconium](https://github.com/zirconium-dev/zirconium-hawaii) for providing the repo template
+- [FreeDesktopSDK](https://gitlab.com/freedesktop-sdk/freedesktop-sdk) for providing cache for upstream elements
+- [GnomeOS](https://gitlab.gnome.org/GNOME/gnome-build-meta) for providing remote elements definitions
+
