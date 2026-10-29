@@ -56,7 +56,13 @@ jobs:
           swap-storage: false
 
       - name: Install deps
-        run: sudo apt-get update && sudo apt-get install just podman zstd -y
+        run: sudo apt-get update && sudo apt-get install just podman zstd git -y
+
+      - name: Install mkosi (git)
+        run: |
+          sudo git clone https://github.com/systemd/mkosi /opt/mkosi
+          sudo ln -s /opt/mkosi/bin/mkosi /usr/bin/mkosi
+          mkosi --version
 
       - name: Get arch
         run: |
