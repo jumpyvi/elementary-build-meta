@@ -1,6 +1,25 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Fix suid
+chmod u+s /usr/bin/fusermount3
+
+chmod 4755 /usr/bin/sudo /usr/bin/su /usr/bin/passwd /usr/bin/newuidmap /usr/bin/newgidmap
+
+fc-cache --force --really-force --system-only --verbose
+
+glib-compile-schemas /usr/share/glib-2.0/schemas/
+
+mkdir -p /var/usrlocal
+ln -s /var/usrlocal /usr/local
+cp -a /usr/local/. /var/usrlocal/
+rm -rf /usr/local
+ln -s /var/usrlocal /usr/local
+
+
+# Remove empty gnome session
+rm -f /usr/share/wayland-sessions/gnome.desktop
+
 # These REALLY want to start
 # By default "mask", symlinks to /etc, so manually null them
 ln -sf /dev/null /usr/lib/systemd/system/systemd-firstboot.service
@@ -13,3 +32,6 @@ chown root:987 /usr/lib/dbus-1.0/dbus-daemon-launch-helper
 chmod 4754 /usr/lib/dbus-1.0/dbus-daemon-launch-helper
 
 systemctl enable preset-global.service
+
+
+echo "VARIANT_ID=bst" >> /usr/lib/os-release

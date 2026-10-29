@@ -19,3 +19,5 @@ mkosi.version
 mkosi.rootpw
 .mkosi-private
 *.efi
+.bst
+.bst2

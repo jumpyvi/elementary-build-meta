@@ -3,23 +3,14 @@ default:
     set -xeuo pipefail
     just --choose
 
-_do-release stream:
+do-release:
     #!/usr/bin/env bash
     sudo rm -rf mkosi.output/ && \
-    just mkosi -B --debug --profile={{stream}} --force --workspace-directory=/workspace && \
-    sudo PROFILE={{stream}} SQUASHFS_LEVEL="${SQUASHFS_LEVEL:-}" ./assemble-iso.sh
+    just mkosi -B --debug -ff --workspace-directory=/workspace && \
     sudo just compress-repo
     sudo chown -R "$(id -u):$(id -g)" mkosi.output
     sudo chmod -R u+rwX mkosi.output
 
-# Built every day from the main branch
-do-daily: (_do-release "daily")
-
-# Built monthly from the main branch
-do-stable: (_do-release "stable")
-
-# Built from PRs
-do-proposed: (_do-release "proposed")
 
 _get_arch:
     @systemd-analyze architectures | awk '/native/ {print $1}'
@@ -50,8 +41,15 @@ mkosi +subcommand:
         -v "{{invocation_directory()}}:/work" \
         -w /work \
         -v "{{env_var('HOME')}}/.cache/mkosi-workspace:/workspace" \
-        ghcr.io/elementary/mkosi:tanit \
+        ghcr.io/elementary/mkosi:edge \
         mkosi {{subcommand}}
+
+bst *ARGS:
+    #!/usr/bin/env bash
+    set -xeuo pipefail
+
+    just mkosi box bst {{ARGS}} && \
+    sudo chown -R 1000:1000 elements/
 
 
 
