@@ -23,3 +23,6 @@ depends:
 
   - freedesktop-sdk.bst:components/vulkan-icd-loader.bst
   - freedesktop-sdk.bst:components/compat-vulkan-link.bst
+
+  - freedesktop-sdk.bst:components/apparmor.bst
+  - freedesktop-sdk.bst:components/apparmor-profiles.bst

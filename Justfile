@@ -3,11 +3,13 @@ default:
     set -xeuo pipefail
     just --choose
 
+
 do-release:
     #!/usr/bin/env bash
-    sudo rm -rf mkosi.output/ && \
-    just mkosi -B --debug -ff --workspace-directory=/workspace && \
-    sudo just compress-repo
+    set -euo pipefail
+    sudo rm -rf mkosi.output/
+    sudo "$(which mkosi)" build -ff
+    # just compress-repo   # see note below
     sudo chown -R "$(id -u):$(id -g)" mkosi.output
     sudo chmod -R u+rwX mkosi.output
 
@@ -27,34 +29,12 @@ genkey:
     OPENSSL_CONF=/dev/null openssl req -new -x509 -newkey rsa:2048 -keyout mkosi.key -out mkosi.crt \
         -days 730 -subj "/CN=mkosi of root/" -nodes -set_serial "0x40$(openssl rand -hex 19)"
 
-mkosi +subcommand:
-    #!/usr/bin/env bash
-    mkdir -p {{env_var('HOME')}}/.cache/mkosi-workspace
-    sudo mkdir -p "$(pwd)/.cache/"{mkosi,buildstream}
-
-    sudo podman run --rm \
-        --runtime=crun \
-        --network host \
-        --dns 8.8.8.8 \
-        --privileged \
-        --security-opt label=disable \
-        -v $(pwd)/.cache/mkosi:/var/cache/mkosi \
-        -v $(pwd)/.cache/buildstream:/root/.cache/buildstream \
-        -v /dev:/dev \
-        -v "{{invocation_directory()}}:/work" \
-        -w /work \
-        -v "{{env_var('HOME')}}/.cache/mkosi-workspace:/workspace" \
-        ghcr.io/elementary/mkosi:edge \
-        mkosi {{subcommand}}
-
 bst *ARGS:
     #!/usr/bin/env bash
     set -xeuo pipefail
 
-    just mkosi box bst {{ARGS}} && \
+    sudo $(which mkosi) box bst {{ARGS}} && \
     sudo chown -R 1000:1000 elements/
-
-
 
 clean:
     just mkosi clean

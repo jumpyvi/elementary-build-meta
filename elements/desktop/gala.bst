@@ -1,6 +1,5 @@
 kind: meson
 
-# //TODO Switch to upstream when merged (elements/desktop/greeter.bst)
 sources:
 - kind: git_repo
   url: github:elementary/gala.git
@@ -17,6 +16,9 @@ build-depends:
 
 runtime-depends:
 - gnome-build-meta.bst:core/gnome-session.bst
+- desktop/portals.bst
+- freedesktop-sdk.bst:components/xdg-desktop-portal.bst
+- deps/xdg-desktop-portal-gtk.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
@@ -33,3 +35,12 @@ depends:
 - gnome-build-meta.bst:core-deps/libhandy.bst
 - deps/granite-6.bst
 - deps/granite-7.bst
+
+config:
+  install-commands:
+    (>):
+    - |
+      install -Dm644 -t "%{install-root}/usr/share/factory/etc/xdg" \
+        "%{install-root}/etc/xdg/io.elementary.desktop.wm.shell"
+      rm -f "%{install-root}/etc/xdg/io.elementary.desktop.wm.shell"
+      rmdir -p --ignore-fail-on-non-empty "%{install-root}/etc/xdg"

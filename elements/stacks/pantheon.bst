@@ -8,32 +8,14 @@ depends:
   - desktop/gala.bst
   - desktop/lightdm.bst
   - desktop/greeter.bst
-  - desktop/portals.bst
-  - freedesktop-sdk.bst:components/xdg-desktop-portal.bst
-  - deps/xdg-desktop-portal-gtk.bst
   - desktop/notifications-server.bst
   - desktop/initial-setup.bst
 
   # Panel
-  - desktop/panel/wingpanel.bst
-  - desktop/panel/applications-menu.bst
-  - desktop/panel/panel-power.bst
-  - desktop/panel/panel-sound.bst
- # - desktop/panel/panel-datetime.bst
-  - desktop/panel/panel-network.bst
-  - desktop/panel/panel-notifications.bst
-  - desktop/panel/quick-settings.bst
+  - desktop/panel/panel-meta.bst
 
   # Settings
-  - desktop/settings/switchboard.bst
-  - desktop/settings/settings-daemon.bst
-  - desktop/settings/settings-system.bst
-  - desktop/settings/session-settings.bst
-  - desktop/settings/default-settings.bst
-  - desktop/settings/desktop-settings.bst
-  - desktop/settings/settings-sound.bst
-  - desktop/settings/settings-network.bst
-  - desktop/settings/settings-notifications.bst
+  - desktop/settings/settings-meta.bst
 
   # Apps
   - desktop/apps/files.bst
@@ -41,10 +23,13 @@ depends:
   - desktop/apps/onboarding.bst
 
   # Look
-  - desktop/wallpapers.bst
-  - desktop/icons.bst
-  - desktop/stylesheet.bst
+  - desktop/look/wallpapers.bst
+  - desktop/look/icons.bst
+  - desktop/look/stylesheet.bst
+  - desktop/look/inter-font.bst
 
   # Commons
   - deps/granite-9.bst
+  - deps/granite-7.bst
+  - desktop/agent-polkit.bst
   

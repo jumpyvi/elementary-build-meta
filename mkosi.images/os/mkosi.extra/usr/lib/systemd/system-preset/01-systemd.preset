@@ -1,3 +1,0 @@
-# Disable first boot unit, avoid systemd TUI user creation
-disable systemd-homed-firstboot.service
-disable systemd-firstboot.service

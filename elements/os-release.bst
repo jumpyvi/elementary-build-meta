@@ -7,7 +7,8 @@ variables:
   strip-binaries: ""
 
 environment:
-  NAME: "elementaryOS"
+  PRETTY_NAME: "elementary OS Buildstream"
+  NAME: "elementary"
   CODENAME: "bst"
   HOME_URL: "none"
   DOCUMENTATION_URL: "none"
@@ -21,7 +22,7 @@ config:
     - |
       cat >"%{install-root}%{indep-libdir}/os-release" <<EOF
       NAME="${NAME}"
-      PRETTY_NAME="${NAME}"
+      PRETTY_NAME="${PRETTY_NAME}"
       VERSION="${VERSION}"
       VERSION_ID="${VERSION}"
       ID="${ID}"
