@@ -12,9 +12,11 @@ depends:
   - gnome-build-meta.bst:gnomeos-deps/alsa-ucm-conf.bst
   - deps/xdg-desktop-portal-gtk.bst
   - freedesktop-sdk.bst:components/xdg-user-dirs.bst
+  - gnome-build-meta.bst:core-deps/xdg-user-dirs-gtk.bst
   - gnome-build-meta.bst:core/gvfs-daemon.bst
   - gnome-build-meta.bst:sdk/gvfs-client.bst
   - gnome-build-meta.bst:sdk/pinentry.bst
+  - freedesktop-sdk.bst:components/ca-certificates.bst
 
   - freedesktop-sdk.bst:components/noto-emoji.bst
   - freedesktop-sdk.bst:components/tex-gyre-fonts.bst
