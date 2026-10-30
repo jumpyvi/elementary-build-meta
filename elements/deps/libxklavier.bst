@@ -1,14 +1,17 @@
 kind: autotools
 
 sources:
-- kind: tar
-  url: freedesktop_people:~svu/libxklavier-5.4.tar.bz2
-  ref: 17a34194df5cbcd3b7bfd0f561d95d1f723aa1c87fca56bc2c209514460a9320
+- kind: git_repo
+  url: freedesktop:archived-projects/libxklavier.git
+  track: libxklavier-5.4
+  ref: libxklavier-5.4-0-g396955bd2ba2db34a42b3807b03155fcc11dfe50
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-autotools.bst
 - freedesktop-sdk.bst:components/pkg-config.bst
 - freedesktop-sdk.bst:components/gobject-introspection.bst
+- freedesktop-sdk.bst:components/gtk-doc.bst
+- freedesktop-sdk-extra.bst:components/intltool.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst

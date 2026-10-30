@@ -3,8 +3,8 @@ kind: autotools
 sources:
 - kind: git_repo
   url: github:ubuntu/lightdm.git
-  track: 1.32.0
-  ref: 1.32.0-0-g4b10d07b7bf87668a245b438b5ffc82e3956bd1c
+  track: 1.33.1
+  ref: 1.33.1-0-g73987eb980e14770b64a3e25dca46c7db049ba61
 - kind: local
   path: files/lightdm/
 
