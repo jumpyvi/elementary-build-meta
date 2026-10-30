@@ -61,6 +61,7 @@ depends:
   - freedesktop-sdk.bst:components/git.bst
   - freedesktop-sdk.bst:components/rsync.bst
   - freedesktop-sdk.bst:components/jq.bst
+  - freedesktop-sdk.bst:components/plymouth.bst
 
   - gnome-build-meta.bst:gnomeos-deps/hidraw-udev.bst
   - gnome-build-meta.bst:gnomeos-deps/journald-config.bst

@@ -15,6 +15,7 @@ build-depends:
 - freedesktop-sdk.bst:components/tpm2-tss.bst
 - freedesktop-sdk.bst:components/util-linux.bst
 - freedesktop-sdk.bst:components/linux.bst
+- freedesktop-sdk.bst:components/plymouth.bst
 - os-release.bst
 
 config:

@@ -11,4 +11,6 @@ depends:
   - desktop/settings/settings-session.bst
   - desktop/settings/settings-sound.bst
   - desktop/settings/settings-system.bst
+  - desktop/settings/settings-bluetooth.bst
+  - desktop/settings/bluetooth-daemon.bst
   

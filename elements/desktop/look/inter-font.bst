@@ -13,4 +13,6 @@ config:
   install-commands:
   - |
     install -Dm644 -t "%{install-root}%{datadir}/fonts/inter" InterVariable*.ttf
+  - |
+    install -Dm644 -t "%{install-root}%{datadir}/fonts/opentype/inter" extras/otf/*.otf
   strip-commands: []
