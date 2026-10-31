@@ -4,7 +4,7 @@ sources:
 - kind: git_repo
   url: github:elementary/settings-daemon.git
   track: main
-  ref: 8.5.0-38-g238bfd6a473f709ea18b7ee7eeaa89b050e05aaf
+  ref: 8.5.0-39-gc7873e24f4e0da8d5c9f814e7ce579a92cd5fdd9
 
 build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst

@@ -12,5 +12,12 @@ depends:
   - desktop/settings/settings-sound.bst
   - desktop/settings/settings-system.bst
   - desktop/settings/settings-bluetooth.bst
+  - desktop/settings/settings-datetime.bst
+  - desktop/settings/settings-power.bst
+  - desktop/settings/settings-useraccounts.bst
+  - desktop/settings/settings-printers.bst
+  - desktop/settings/settings-applications.bst
+  - desktop/settings/settings-keyboard.bst
+  - desktop/settings/settings-sharing.bst
   - desktop/settings/bluetooth-daemon.bst
   

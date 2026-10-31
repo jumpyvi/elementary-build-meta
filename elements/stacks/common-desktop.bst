@@ -6,6 +6,7 @@ depends:
   - freedesktop-sdk.bst:components/xwayland.bst
   - freedesktop-sdk.bst:components/flatpak.bst
   - freedesktop-sdk.bst:components/pipewire-daemon.bst
+  - freedesktop-sdk.bst:components/cups.bst
   - freedesktop-sdk.bst:components/cups-daemon.bst
   - freedesktop-sdk.bst:vm/config/flathub.bst
   - freedesktop-sdk.bst:vm/mesa-default.bst
