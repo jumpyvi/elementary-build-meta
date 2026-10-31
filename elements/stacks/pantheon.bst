@@ -18,9 +18,7 @@ depends:
   - desktop/settings/settings-meta.bst
 
   # Apps
-  - desktop/apps/files.bst
-  - desktop/apps/terminal.bst
-  - desktop/apps/onboarding.bst
+  - desktop/apps/apps-meta.bst
 
   # Look
   - desktop/look/wallpapers.bst

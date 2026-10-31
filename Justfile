@@ -7,8 +7,9 @@ default:
 do-release:
     #!/usr/bin/env bash
     set -euo pipefail
+    MKOSI="$(command -v mkosi || echo "$HOME/.local/bin/mkosi")"
     sudo rm -rf mkosi.output/
-    sudo "$(which mkosi)" build -ff
+    sudo "$MKOSI" build -ff
     # just compress-repo   # see note below
     sudo chown -R "$(id -u):$(id -g)" mkosi.output
     sudo chmod -R u+rwX mkosi.output
@@ -32,7 +33,7 @@ genkey:
 bst *ARGS:
     #!/usr/bin/env bash
     set -xeuo pipefail
-    sudo $(which mkosi) box -- bst {{ARGS}} && \
+    sudo "$(command -v mkosi || echo "$HOME/.local/bin/mkosi")" box -- bst {{ARGS}}
     sudo chown -R 1000:1000 elements/
 
 clean:
