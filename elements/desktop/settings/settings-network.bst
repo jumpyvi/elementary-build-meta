@@ -10,6 +10,9 @@ build-depends:
 - freedesktop-sdk.bst:public-stacks/buildsystem-meson.bst
 - freedesktop-sdk.bst:components/vala.bst
 
+runtime-depends:
+- desktop/network/nm-connection-editor.bst
+
 depends:
 - freedesktop-sdk.bst:components/systemd.bst
 - desktop/settings/switchboard.bst

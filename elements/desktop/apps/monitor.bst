@@ -18,7 +18,6 @@ build-depends:
 - freedesktop-sdk.bst:components/json-glib.bst
 - freedesktop-sdk.bst:components/libxml2.bst
 - freedesktop-sdk.bst:components/udisks.bst
-- deps/liblivechart.bst
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
@@ -26,6 +25,7 @@ depends:
 - freedesktop-sdk.bst:components/glib.bst
 - freedesktop-sdk.bst:components/flatpak.bst
 - freedesktop-sdk.bst:components/pciutils.bst
+- deps/liblivechart.bst
 - deps/gtk-4.bst
 - deps/libadwaita.bst
 - freedesktop-sdk.bst:components/dbus.bst

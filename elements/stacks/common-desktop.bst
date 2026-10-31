@@ -6,8 +6,6 @@ depends:
   - freedesktop-sdk.bst:components/xwayland.bst
   - freedesktop-sdk.bst:components/flatpak.bst
   - freedesktop-sdk.bst:components/pipewire-daemon.bst
-  - freedesktop-sdk.bst:components/cups.bst
-  - freedesktop-sdk.bst:components/cups-daemon.bst
   - freedesktop-sdk.bst:vm/config/flathub.bst
   - freedesktop-sdk.bst:vm/mesa-default.bst
   - gnome-build-meta.bst:gnomeos-deps/alsa-ucm-conf.bst
@@ -17,7 +15,6 @@ depends:
   - gnome-build-meta.bst:core/gvfs-daemon.bst
   - gnome-build-meta.bst:sdk/gvfs-client.bst
   - gnome-build-meta.bst:sdk/pinentry.bst
-  - freedesktop-sdk.bst:components/ca-certificates.bst
 
   - freedesktop-sdk.bst:components/noto-emoji.bst
   - freedesktop-sdk.bst:components/tex-gyre-fonts.bst
@@ -30,3 +27,5 @@ depends:
 
   - freedesktop-sdk.bst:components/apparmor.bst
   - freedesktop-sdk.bst:components/apparmor-profiles.bst
+
+  - desktop/network/network-meta.bst

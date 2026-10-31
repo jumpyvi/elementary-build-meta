@@ -15,7 +15,7 @@ build-depends:
 
 depends:
 - freedesktop-sdk.bst:public-stacks/runtime-minimal.bst
-- deps/libecal.bst
+- deps/libevolution-minimal.bst
 - freedesktop-sdk.bst:components/gsettings-desktop-schemas.bst
 - freedesktop-sdk.bst:components/glib.bst
 - deps/gtk-4.bst

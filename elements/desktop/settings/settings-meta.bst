@@ -15,6 +15,8 @@ depends:
   - desktop/settings/settings-datetime.bst
   - desktop/settings/settings-power.bst
   - desktop/settings/settings-useraccounts.bst
+  - desktop/settings/settings-onlineaccounts.bst
+  - desktop/settings/settings-mouse-touchpad.bst
   - desktop/settings/settings-printers.bst
   - desktop/settings/settings-applications.bst
   - desktop/settings/settings-keyboard.bst
